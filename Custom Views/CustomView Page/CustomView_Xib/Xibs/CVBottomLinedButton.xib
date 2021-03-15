@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CVBottomLinedButton" customModule="CustomView_Xib" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine" destination="fHW-Fe-jFT" id="7R4-jK-xbd"/>
+                <outlet property="mainButton" destination="x6a-ER-dLg" id="qaR-jX-9fU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="586" height="136"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-ER-dLg">
+                    <rect key="frame" x="0.0" y="0.0" width="586" height="133"/>
+                    <color key="backgroundColor" red="1" green="0.45748355600000001" blue="0.368255624" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Dracarys">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHW-Fe-jFT">
+                    <rect key="frame" x="20" y="133" width="546" height="3"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="Ulb-vo-h3i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fHW-Fe-jFT" secondAttribute="bottom" id="EiZ-mn-BqP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fHW-Fe-jFT" secondAttribute="trailing" constant="20" id="SFL-Pe-1bs"/>
+                <constraint firstItem="x6a-ER-dLg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UDr-an-yLl"/>
+                <constraint firstItem="x6a-ER-dLg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="awg-yJ-wXr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x6a-ER-dLg" secondAttribute="trailing" id="oJn-YR-Swc"/>
+                <constraint firstItem="fHW-Fe-jFT" firstAttribute="top" secondItem="x6a-ER-dLg" secondAttribute="bottom" id="pBE-T6-SJP"/>
+                <constraint firstItem="fHW-Fe-jFT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="uJA-BP-w9Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="220.28985507246378" y="-150.81521739130437"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
